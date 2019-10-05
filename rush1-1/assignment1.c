@@ -24,7 +24,7 @@ void other_line(int ab, int cd) {
         my_putchar(' ');
     }
     if (ab > 1) {
-        my_putchar(' ');
+        my_putchar('|');
     }
     my_putchar('\n');
 }
@@ -32,7 +32,7 @@ void other_line(int ab, int cd) {
 void first_line(int ab)
 {
     my_putchar('o');
-    for (int i=1; i< ab; i++) {
+    for (int i=1; i< ab - 1; i++) {
         my_putchar('-');
     }
     if (ab > 1) {
