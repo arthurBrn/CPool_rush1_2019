@@ -20,7 +20,7 @@ int wrong_number(int length, int height)
 
 void first_line(char str[3], int length, int height)
 {
-    if (height == 1) {
+    if (height == 1 || length == 1) {
         for (int i = 0; i < length; i++) {
             my_putchar(str[1]);
         }
