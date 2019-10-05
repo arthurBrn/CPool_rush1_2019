@@ -23,13 +23,13 @@ void display_first_line(char string[3], int x, int y)
     my_putchar('\n');
 }
 
-void display_middle_line(char string[3], int x, int y)
+void display_middle_line(char c, int x, int y)
 {
-    my_putchar(string[1]);
+    my_putchar(c);
     for (int i = 0; i < x - 2; i++)
         my_putchar(' ');
         if (x > 1)
-            my_putchar(string[1]);
+            my_putchar(c);
     my_putchar('\n');
 }
 
@@ -43,7 +43,7 @@ void rush(int x, int y)
     }
     display_first_line(string, x, y);
     for (int i = 1; i < y - 1; i++)
-        display_middle_line(string, x, y);
+        display_middle_line(string[1], x, y);
     if (y > 1)
         display_first_line(string, x, y);
 }

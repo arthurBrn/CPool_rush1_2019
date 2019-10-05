@@ -34,14 +34,14 @@ void first_line(char str[3],int length, int height)
     my_putchar('\n');
 }
 
-void  other_line(char one[3], int length, int height)
+void  other_line(char c, int length, int height)
 {
-    my_putchar(one[1]);
+    my_putchar(c);
     for (int i = 1; i < length - 1; i++) {
         my_putchar(' ');
     }
     if (length > 1) {
-        my_putchar(one[1]);
+        my_putchar(c);
     }
     my_putchar('\n');
 }
