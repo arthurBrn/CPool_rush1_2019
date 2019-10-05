@@ -5,6 +5,8 @@
 ** assignment1
 */
 
+#include <unistd.h>
+
 void my_putchar(char c);
 
 int nbr_test(int ab, int cd)
