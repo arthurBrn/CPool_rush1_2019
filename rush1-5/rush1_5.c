@@ -18,7 +18,7 @@ int wrong_number(int length, int height)
     return (1);
 }
 
-void first_line(char str[3],int length, int height)
+void first_line(char str[3], int length, int height)
 {
     if (height == 1) {
         for (int i = 0; i < length; i++) {
@@ -26,7 +26,7 @@ void first_line(char str[3],int length, int height)
         }
     } else {
         my_putchar(str[0]);
-        for (int i=1; i < length-1; i++){
+        for (int i = 1; i < length - 1; i++){
             my_putchar(str[1]);
         }
         my_putchar(str[2]);
@@ -34,7 +34,7 @@ void first_line(char str[3],int length, int height)
     my_putchar('\n');
 }
 
-void  other_line(char c, int length, int height)
+void other_line(char c, int length)
 {
     my_putchar(c);
     for (int i = 1; i < length - 1; i++) {
@@ -54,7 +54,7 @@ void rush(int length, int height)
     if (wrong_number(length, height)  == 1) {
         first_line(one, length, height);
         for (int i = 1; i < height - 1; i++) {
-            other_line(one, length, height);
+            other_line(one[1], length);
         }
         if (height > 1) {
             first_line(two, length, height);
