@@ -18,7 +18,7 @@ int nbr_test(int ab, int cd)
     return (1);
 }
 
-void other_line(int ab, int cd) {
+void other_line(int ab) {
     my_putchar('|');
     for (int a = 1; a < ab -1 ; a++) {
         my_putchar(' ');
@@ -41,12 +41,12 @@ void first_line(int ab)
     my_putchar('\n');
 }
 
-int rush(int ab, int cd)
+void rush(int ab, int cd)
 {
     if (nbr_test(ab, cd) == 1) {
         first_line(ab);
         for (int a = 1; a < cd - 1; a++) {
-            other_line(ab, cd);
+            other_line(ab);
         }
         if (cd > 1) {
             first_line(ab);
