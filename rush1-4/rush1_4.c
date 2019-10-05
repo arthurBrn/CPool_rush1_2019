@@ -38,7 +38,7 @@ void rush(int x, int y)
     char string[] = "ABC";
 
     if (x < 1 || y < 1) {
-        write(1, "Invalid size\n", 13);
+        write(2, "Invalid size\n", 13);
         return;
     }
     display_first_line(string, x, y);

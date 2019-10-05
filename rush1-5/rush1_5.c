@@ -12,7 +12,7 @@ void my_putchar(char c);
 int wrong_number(int length, int height)
 {
     if (length <= 0 || height <= 0) {
-        write(1, "Invalid size\n", 13);
+        write(2, "Invalid size\n", 13);
         return (0);
     }
     return (1);
