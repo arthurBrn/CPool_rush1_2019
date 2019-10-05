@@ -26,7 +26,7 @@ void display_first_line(char string[3], int x, int y)
 void display_middle_line(char string[3], int x, int y)
 {
     my_putchar(string[1]);
-    for (int i = 0; i < y - 2; i++)
+    for (int i = 1; i < x - 1; i++)
         my_putchar(' ');
         if (x > 1)
             my_putchar(string[1]);

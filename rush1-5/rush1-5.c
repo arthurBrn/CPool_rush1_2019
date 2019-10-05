@@ -9,12 +9,13 @@
 
 void my_putchar(char c);
 
-void wrong_number(int length, int height)
+int wrong_number(int length, int height)
 {
-    if (ab <= 0 || cd <= 0) {
+    if (length <= 0 || height <= 0) {
         write (1, "Invalid size\n", 13);
         return (0);
     }
+    return (1);
 }
 
 void first_line(char str[3],int length, int height)
@@ -42,7 +43,7 @@ void  other_line(char one[3], int length, int height)
     if (length > 1) {
         my_putchar(one[1]);
     }
-    mu_putchar('\n');
+    my_putchar('\n');
 }
 
 void rush(int length, int height)
