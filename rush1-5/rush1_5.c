@@ -12,7 +12,7 @@ void my_putchar(char c);
 int wrong_number(int length, int height)
 {
     if (length <= 0 || height <= 0) {
-        write (1, "Invalid size\n", 13);
+        write(1, "Invalid size\n", 13);
         return (0);
     }
     return (1);
@@ -51,7 +51,7 @@ void rush(int length, int height)
     char one[] = "ABC";
     char two[] = "CBA";
 
-    if (wrong_number(length, height)  == 1) {
+    if (wrong_number(length, height) == 1) {
         first_line(one, length, height);
         for (int i = 1; i < height - 1; i++) {
             other_line(one[1], length);

@@ -12,15 +12,16 @@ void my_putchar(char c);
 int nbr_test(int ab, int cd)
 {
     if (ab <= 0 || cd <= 0) {
-        write (1, "Invalid size\n", 13);
+        write(1, "Invalid size\n", 13);
         return (0);
     }
     return (1);
 }
 
-void other_line(int ab) {
+void other_line(int ab)
+{
     my_putchar('|');
-    for (int a = 1; a < ab -1 ; a++) {
+    for (int a = 1; a < ab - 1; a++) {
         my_putchar(' ');
     }
     if (ab > 1) {
