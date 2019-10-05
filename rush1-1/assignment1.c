@@ -5,8 +5,6 @@
 ** assignment1
 */
 
-#include <unistd.h>
-
 void my_putchar(char c);
 
 int nbr_test(int ab, int cd)
@@ -26,6 +24,7 @@ void other_line(int ab, int cd) {
     if (ab > 1) {
         my_putchar(' ');
     }
+    my_putchar('\n');
 }
 
 void first_line(int ab)
